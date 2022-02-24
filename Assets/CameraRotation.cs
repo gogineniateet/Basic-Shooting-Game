@@ -5,6 +5,7 @@ using UnityEngine;
 public class CameraRotation : MonoBehaviour
 {
     public float rotationSpeed;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,10 @@ public class CameraRotation : MonoBehaviour
         float mouseY = Input.GetAxis("Mouse Y");
 
 
-        transform.rotation = transform.rotation * Quaternion.Euler(-mouseY * rotationSpeed, mouseX * rotationSpeed, 0);
+        transform.rotation = transform.rotation * Quaternion.Euler(0, mouseX * rotationSpeed, 0);
+
+        Camera cam = GetComponentInChildren<Camera>();
+        cam.transform.localRotation = Quaternion.Euler(-mouseY, 0, 0) * cam.transform.localRotation;
 
     }
 }

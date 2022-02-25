@@ -25,8 +25,10 @@ public class BulletLaunch : MonoBehaviour
             tempBullet.GetComponent<Rigidbody>().velocity = Camera.main.transform.rotation * Vector3.forward * speed;
         }
 
-
-
-
     }
+
+    
+
+
+
 }

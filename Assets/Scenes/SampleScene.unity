@@ -183,7 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletPrefab: {fileID: 6880890380444596193, guid: 95a77db6bb44462459ed209ec0aa8f8d, type: 3}
-  speed: 15
+  speed: 20
 --- !u!114 &550517928
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyPrefab: {fileID: 7188772257934886809, guid: ac857527d017574448efb8c6d24cec43, type: 3}
-  time: 1
+  time: 0
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

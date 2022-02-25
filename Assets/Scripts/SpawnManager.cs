@@ -19,13 +19,13 @@ public class SpawnManager : MonoBehaviour
         time = time + Time.deltaTime;
         if (time >= 5f)
         {
-            float x = Random.Range(-15.0f, 15.0f);
-            float z = Random.Range(15.0f, -15.0f);
-            Instantiate(enemyPrefab, new Vector3(x, 2, z), Quaternion.identity);
+            float x = Random.Range(-15f, 15f);
+            float y = Random.Range(1f, 2f);
+            float z = Random.Range(15f, -15f);
+            Instantiate(enemyPrefab, new Vector3(x, y, z), Quaternion.identity);
             time = 0f;
         }
     }
-
 
 
 }

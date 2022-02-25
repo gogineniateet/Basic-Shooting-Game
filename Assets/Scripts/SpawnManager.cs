@@ -25,6 +25,10 @@ public class SpawnManager : MonoBehaviour
             Instantiate(enemyPrefab, new Vector3(x, y, z), Quaternion.identity);
             time = 0f;
         }
+
+
+        
+
     }
 
 

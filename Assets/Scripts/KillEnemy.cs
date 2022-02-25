@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class KillEnemy : MonoBehaviour
 {
-    static  int score;
-
-
-
+    ScoreManager score;
+    public float time;
     public void OnCollisionEnter(Collision collision)
     {        
-            Destroy(gameObject);
-            score++;
-            Debug.Log("Score : " + score);
+        Destroy(gameObject);
+        score = GameObject.Find("ScoreManager").GetComponent<ScoreManager>();
+        score.ScoreCalculator(10);
     }
+
+
+   
 
 }
